@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-[#F4F7FF] font-(family-name:Poppins)">
+    <section class="w-11/12 mx-auto ">
+        <nav class="bg-[#FFFFFF] h-24 w-full mt-8 rounded-lg px-10 py-5 flex justify-between items-center ">
+
+            <div class="flex gap-4 items-center text-sm">
+                <img src="./assets/logo.png" alt="">
+                <div class="text-2xl">Dev<span class="font-bold">Board</span></div>
+
+            </div>
+            <div class=" flex gap-4 items-center">
+
+
+                <button id="back"
+                    class="complatedBtn bg-blue-700 text-white text-2xl px-6 py-3 rounded-md cursor-pointer  ">
+                    Back to</button>
+
+
+            </div>
+
+
+            </div>
+        </nav>
+        <div class="w-11/12 mx-auto mt-8">
+            <h1 class="text-3xl text-center "> Bloge</h1>
+            <div class="px-5 rounded-md py-4 bg-[#FFFFFF]">
+
+                <p class="text-3xl font-bold mb-3">Question-1: What are the different ways to select an element in the DOM</p>
+                <hr class="border-b-black ">
+                <p class="mt-4 text-md">There are the many different ways to select an element in the DOM , as like
+                    getElementsByTagName(),
+                    getElementsByClassName(),
+                    getElementById(),
+                    querySelector(),
+                    querySelectorAll()</p>
+            </div>
+            <div class="px-5 rounded-md py-4 bg-[#FFFFFF] mt-4">
+
+                <p class="text-3xl font-bold mb-3"> Question-2:What is the difference between innerHTML, innerText, and textContent ?</p>
+                <hr class="border-b-black ">
+                <p class="mt-4 text-md"> innerHTML: Get html content and tags.
+                
+                innerText: Get visible text only.
+                textContent: Get all text content and whitespace.</p>
+            </div>
+            <div class="px-5 rounded-md py-4 bg-[#FFFFFF] mt-4">
+
+                <p class="text-3xl font-bold mb-3"> Question-3:What is event delegation in the DOM?</p>
+                <hr class="border-b-black ">
+                <p class="mt-4 text-md">Event delegation is using one event listener on a parent to handle events for all its children.</p>
+            </div>
+            <div class="px-5 rounded-md py-4 bg-[#FFFFFF] mt-4">
+
+                <p class="text-3xl font-bold mb-3">Question-4: What is event bubbling in the DOM?</p>
+                <hr class="border-b-black ">
+                <p class="mt-4 text-md">Event bubbling is like a chain reaction. When something happens on a child element , that event bubbles up to the
+                parent elements.</p>
+            </div>
+            <div class="px-5 rounded-md py-4 bg-[#FFFFFF] mt-4">
+
+                <p class="text-3xl font-bold mb-3"> Question-5: How do you create, add, and remove elements using JavaScript?
+</p>
+                <hr class="border-b-black ">
+                <p class="mt-4 text-md">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam illum facilis
+                    deserunt eius obcaecati labore accusamus assumenda repellendus sunt consequatur distinctio, dolorem
+                    provident dicta. Veniam ipsum beatae aperiam. Officiis, laborum!</p>
+            </div>
+
+
+
+        </div>
+
+    </section>
+    <script>
+        const back = document.getElementById("back").addEventListener("click", function () {
+            window.location.href = "./index.html"
+        })
+    </script>
+</body>
+
+</html>
